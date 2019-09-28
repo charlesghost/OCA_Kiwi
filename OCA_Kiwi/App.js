@@ -1,5 +1,6 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
+import Homescreen from "./welcomes_screen"
 
 import { Container, Content } from 'native-base'
 import Swiper from 'react-native-swiper'
