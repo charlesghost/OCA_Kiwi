@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Homescreen from "./welcomes_screen"
 import DeckSwipeHelp from "./DeckSwiper"
+import ChatScreen from "./chat_screen"
 
 import { Container, Content } from 'native-base'
 import Swiper from 'react-native-swiper'
@@ -9,9 +10,8 @@ import Swiper from 'react-native-swiper'
 const styles = StyleSheet.create({
   slideDefault: {
     flex: 1,
-    backgroundColor: "#ffedf1"
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: "#ffedf1",
+
   },
   text: {
     color: 'white',
@@ -53,7 +53,7 @@ export default class App extends React.Component {
           >
 
             <View style={styles.slideDefault}>
-              <Text style={styles.text}>Chat</Text>
+              <Homescreen/>
             </View>
             <Swiper
               loop={false}
@@ -66,14 +66,14 @@ export default class App extends React.Component {
                 <Text style={styles.text}>Search</Text>
               </View>
               <View style={styles.slideDefault}>
-                <Text style={styles.text}>Camera</Text>
+                <ChatScreen/>
               </View>
               <View style={styles.slideDefault}>
                 <Text style={styles.text}>Memories</Text>
               </View>
             </Swiper>
             <View style={styles.slideDefault}>
-              <Text style={styles.text}>Stories</Text>
+              <DeckSwipeHelp/>
             </View>
           </Swiper>
         </Content>
