@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import Homescreen from "./welcomes_screen"
+import DeckSwipeHelp from "./DeckSwiper"
 
 import { Container, Content } from 'native-base'
 import Swiper from 'react-native-swiper'
@@ -8,9 +9,9 @@ import Swiper from 'react-native-swiper'
 const styles = StyleSheet.create({
   slideDefault: {
     flex: 1,
+    backgroundColor: "#ffedf1"
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'blue'
   },
   text: {
     color: 'white',
